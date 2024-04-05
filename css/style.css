@@ -141,7 +141,7 @@ line {
 	border-width: 0.4vh;
 	background: hsla(183, 65%, 50%, 25%);
 	/* transition: 1s all ease; */
-	opacity: 1;
+	opacity: 0;
 }
 
 /* circle button */
