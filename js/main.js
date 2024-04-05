@@ -1,5 +1,64 @@
 //variableStart
-const documentRoutes = {'turnlock100': {'drawings': ['test1.pdf'], 'miscellaneous': ['test1.pdf', 'turnlock101.png', 'turnlock103.mp4'], 'imagesVideos': ['asd.png', 'turnlock101.png'], 'specifications': ['test1.pdf']}, 'tourlock180': {'drawings': ['test1.pdf'], 'miscellaneous': ['test1.pdf', 'turnlock101.png', 'turnlock103.mp4'], 'imagesVideos': ['asd.png', 'turnlock101.png'], 'specifications': ['test1.pdf']}, 'lifelineSwing': {'drawings': ['test1.pdf'], 'miscellaneous': ['test1.pdf', 'turnlock101.png', 'turnlock103.mp4'], 'imagesVideos': ['asd.png', 'turnlock101.png'], 'specifications': ['test1.pdf']}, 'circlelockSolo': {'drawings': ['test1.pdf', 'TURNLOCK-100EC CUTSHEET.pdf', 'TURNLOCK-100EC2-18 CUSTOM FEATURES CUTSHEET.pdf'], 'miscellaneous': ['test1.pdf', 'turnlock101.png', 'turnlock103.mp4'], 'imagesVideos': ['asd.png', 'turnlock101.png', 'turnlock102.png', 'turnlock103.png', 'turnlock104.mp4'], 'specifications': ['test1.pdf']}, 'circlelockCombi': {'drawings': ['test1.pdf'], 'miscellaneous': ['test1.pdf', 'turnlock101.png', 'turnlock103.mp4'], 'imagesVideos': ['asd.png', 'turnlock101.png'], 'specifications': ['test1.pdf']}, 'turnlock150': {'drawings': ['test1.pdf'], 'miscellaneous': ['test1.pdf', 'turnlock101.png', 'turnlock103.mp4'], 'imagesVideos': ['asd.png', 'turnlock101.png'], 'specifications': ['test1.pdf']}, 'turnlockSideGate': {'drawings': ['test1.pdf'], 'miscellaneous': ['test1.pdf', 'turnlock101.png', 'turnlock103.mp4'], 'imagesVideos': ['asd.png', 'turnlock101.png'], 'specifications': ['test1.pdf']}, 'TQM': {'drawings': ['test1.pdf'], 'miscellaneous': ['test1.pdf', 'turnlock101.png', 'turnlock103.mp4'], 'imagesVideos': ['asd.png', 'turnlock101.png'], 'specifications': ['test1.pdf']}};
+const documentRoutes = {
+	turnlock100: {
+		drawings: ['test1.pdf'],
+		miscellaneous: ['test1.pdf', 'turnlock101.png', 'turnlock103.mp4'],
+		imagesVideos: ['asd.png', 'turnlock101.png'],
+		specifications: ['test1.pdf'],
+	},
+	tourlock180: {
+		drawings: ['test1.pdf'],
+		miscellaneous: ['test1.pdf', 'turnlock101.png', 'turnlock103.mp4'],
+		imagesVideos: ['asd.png', 'turnlock101.png'],
+		specifications: ['test1.pdf'],
+	},
+	lifelineSwing: {
+		drawings: ['test1.pdf'],
+		miscellaneous: ['test1.pdf', 'turnlock101.png', 'turnlock103.mp4'],
+		imagesVideos: ['asd.png', 'turnlock101.png'],
+		specifications: ['test1.pdf'],
+	},
+	circlelockSolo: {
+		drawings: [
+			'test1.pdf',
+			'TURNLOCK-100EC CUTSHEET.pdf',
+			'TURNLOCK-100EC2-18 CUSTOM FEATURES CUTSHEET.pdf',
+		],
+		miscellaneous: ['test1.pdf', 'turnlock101.png', 'turnlock103.mp4'],
+		imagesVideos: [
+			'asd.png',
+			'turnlock101.png',
+			'turnlock102.png',
+			'turnlock103.png',
+			'turnlock104.mp4',
+		],
+		specifications: ['test1.pdf'],
+	},
+	circlelockCombi: {
+		drawings: ['test1.pdf'],
+		miscellaneous: ['test1.pdf', 'turnlock101.png', 'turnlock103.mp4'],
+		imagesVideos: ['asd.png', 'turnlock101.png'],
+		specifications: ['test1.pdf'],
+	},
+	turnlock150: {
+		drawings: ['test1.pdf'],
+		miscellaneous: ['test1.pdf', 'turnlock101.png', 'turnlock103.mp4'],
+		imagesVideos: ['asd.png', 'turnlock101.png'],
+		specifications: ['test1.pdf'],
+	},
+	turnlockSideGate: {
+		drawings: ['test1.pdf'],
+		miscellaneous: ['test1.pdf', 'turnlock101.png', 'turnlock103.mp4'],
+		imagesVideos: ['asd.png', 'turnlock101.png'],
+		specifications: ['test1.pdf'],
+	},
+	TQM: {
+		drawings: ['test1.pdf'],
+		miscellaneous: ['test1.pdf', 'turnlock101.png', 'turnlock103.mp4'],
+		imagesVideos: ['asd.png', 'turnlock101.png'],
+		specifications: ['test1.pdf'],
+	},
+}
 //variableEnd
 
 // Variables
@@ -1810,6 +1869,8 @@ function createContent(obj) {
 					subVideoFinish1.src = `assets/${currentButton}/${nextButton}/paint/${nextButton}${1}.mp4`
 					subVideoFinish2.src = `assets/${currentButton}/${nextButton}/paint/${nextButton}${2}.mp4`
 				} else if (paint === 3) {
+					subVideoFinish1.src = `assets/${currentButton}/${nextButton}/paint/${nextButton}${1}.mp4`
+					subVideoFinish2.src = `assets/${currentButton}/${nextButton}/paint/${nextButton}${2}.mp4`
 					subVideoFinish3.src = `assets/${currentButton}/${nextButton}/paint/${nextButton}${3}.mp4`
 				}
 				for (let i = 0; i < paint; i++) {
