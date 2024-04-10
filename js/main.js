@@ -1235,10 +1235,10 @@ function createContent(obj) {
 			if (nextButton === 'beSecure' || nextButton === 'stereoV') {
 				subButton.addEventListener('click', function () {
 					HideShowCont()
-					buttonGrid.children.forEach((element) => {
+					Array.from(buttonGrid.children).forEach((element) => {
 						element.style.pointerEvents = 'none'
 					})
-					cornerIcons.children.forEach((element) => {
+					Array.from(cornerIcons.children).forEach((element) => {
 						element.style.pointerEvents = 'none'
 					})
 					backButton.style.pointerEvents = 'none'
@@ -1318,10 +1318,10 @@ function createContent(obj) {
 			} else {
 				subButton.addEventListener('click', function () {
 					HideShowCont()
-					buttonGrid.children.forEach((element) => {
+					Array.from(buttonGrid.children).forEach((element) => {
 						element.style.pointerEvents = 'none'
 					})
-					cornerIcons.children.forEach((element) => {
+					Array.from(cornerIcons.children).forEach((element) => {
 						element.style.pointerEvents = 'none'
 					})
 					backButton.style.pointerEvents = 'none'
@@ -2085,7 +2085,7 @@ function createContent(obj) {
 			Array.from(buttonGrid.children).forEach((element) => {
 				element.style.pointerEvents = 'none'
 			})
-			cornerIcons.children.forEach((element) => {
+			Array.from(cornerIcons.children).forEach((element) => {
 				element.style.pointerEvents = 'none'
 			})
 			setTimeout(() => {
